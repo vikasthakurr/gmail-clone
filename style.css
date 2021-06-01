@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*header*/
+
+.header_left img {
+    object-fit: contain;
+    height: 75px;
+    margin-left: 5px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.header_left {
+    display: flex;
+    align-items: center;
+}
+
+.header_left span {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.header_middle {
+    display: flex;
+    flex: 0.7;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.material-icons {
+    color: grey;
+}
+
+.header_middle input {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    font-size: medium;
+    background-color: transparent;
+}
+
+.header_right {
+    display: flex;
+    padding-right: 20px;
+}
+
+.header_right span {
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+/*sidebar*/
+
+.sidebar {
+    flex: 0.3;
+    max-width: 300px;
+    padding-right: 20px;
+}
+
+.sidebar_compose {
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: grey;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.75);
+}
+
+.sidebar_compose span {
+    margin-right: 5px;
+}
+
+.sidebaroption {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    color: #181818;
+}
+
+.sidebaroption .material-icons {
+    padding: 5px;
+}
+
+.sidebaroption h3 {
+    flex: 1;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.sidebaroption:hover,
+.sidebaroption:hover h3,
+.sidebaroption:hover .material-icons,
+.sidebaroption_active,
+.sidebaroption_active h3,
+.sidebaroption_active .material-icons {
+    background-color: #fcecec;
+    color: #c04b37;
+    font-weight: 800;
+}
+
+.sidebar-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar_footericons .material-icons {
+    margin: 7px;
+    cursor: pointer;
+}
+
+.main_body {
+    display: flex;
+    height: 100vh;
+}
+
+body {
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.emaillist {
+    flex: 1;
+    overflow: scroll;
+}
+
+.emaillist_settings {
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid whitesmoke;
+    background-color: white;
+    z-index: 999;
+    padding: 8px;
+}
+
+.emaillist_settingsleft {
+    display: flex;
+    align-items: center;
+}
+
+.emaillist_settings .material-icons {
+    margin: 5px;
+    cursor: pointer;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    border-bottom-width: 2px;
+    padding: 15px;
+    min-width: 200px;
+    cursor: pointer;
+    color: grey;
+    border-width: 0;
+}
+
+.emaillist_sections {
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: white;
+    border-bottom: 1px solid whitesmoke;
+    z-index: 999;
+}
+
+.section_selected {
+    background-color: whitesmoke;
+    border-width: 3px;
+    color: red;
+    border-bottom: 3px solid red;
+}
+
+.section_selected .material-icons {
+    color: red;
+}
+
+.section:hover {
+    background-color: whitesmoke;
+    border-width: 3px;
+}
+
+.section h4 {
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.emailrow_option {
+    display: flex;
+    align-items: center;
+}
+
+.emailrow_option .material-icons {
+    margin: 5px;
+}
+
+.emailrow {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid whitesmoke;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.emailrow:hover {
+    border-top: 1px solid whitesmoke;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.24);
+}
+
+.emailrow_message {
+    display: flex;
+    flex: 0.8;
+    align-items: center;
+    font-size: 13px;
+}
+
+.emailrow_message h4 {
+    width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.emailrow_title {
+    font-size: 13px;
+    flex: 0.3;
+}
+
+.emailrow_time {
+    padding-right: 15px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.emailrow_description {
+    font-weight: 400;
+    color: grey;
+}
